@@ -1,0 +1,106 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #FF6347; /* Tomato */
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.draggableContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #FFCD00; /* Bright Yellow */
+    color: #fff;
+    padding: 15px;
+    margin: 15px;
+    width: 170px;
+    text-align: center;
+    cursor: grab;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    background-color: #ffb000;
+}
+
+.item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.droppableContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.bin {
+    background-color: #32CD32; /* Lime Green */
+    color: white;
+    padding: 40px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 12px;
+    border: 3px solid #28a745;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bin:hover {
+    background-color: #28a745; /* Darker Green */
+}
+
+.bin img {
+    width: 100px;
+    height: 100px;
+}
+
+.remarks {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+.scoreboard {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #E74C3C; /* Red color for emphasis */
+}
+
+#resetBtn {
+    padding: 12px 25px;
+    background-color: #3498DB; /* Sky Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#resetBtn:hover {
+    background-color: #2980B9;
+}

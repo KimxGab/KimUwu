@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycle Game</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexScript.js" defer></script> 
+</head>
+<body>
+    <header><h1>Recycle Game</h1></header>
+    
+    <div class="draggableContainer">
+        <div class="item" id="plastic" draggable="true">
+            <img src="Plastic Bottle.jpg" alt="Plastic Bottle" class="itemImage">
+            Plastic Bottle
+        </div>
+        <div class="item" id="paper" draggable="true">
+            <img src="Paper.jpg" alt="Paper" class="itemImage">
+            Paper
+        </div>
+        <div class="item" id="glass" draggable="true">
+            <img src="Glass Bottle.jpg" alt="Glass Bottle" class="itemImage">
+            Glass Bottle
+        </div>
+    </div>
+
+    <div class="droppableContainer">
+        <div class="bin" id="plasticBin" data-draggable-id="plastic">
+            <img src="Plastic Bin.jpg" alt="Plastic Bin" class="binImage">
+            Plastic Bin
+        </div>
+        <div class="bin" id="paperBin" data-draggable-id="paper">
+            <img src="Paper Bin.png" alt="Paper Bin" class="binImage">
+            Paper Bin
+        </div>
+        <div class="bin" id="glassBin" data-draggable-id="glass">
+            <img src="Glass Bin.jpg" alt="Glass Bin" class="binImage">
+            Glass Bin
+        </div>
+        <div class="remarks"><p id="remarks"></p></div>
+    </div>
+
+    <div class="scoreboard">
+        <p>Score: <span id="score">0</span></p>
+        <button id="resetBtn">Reset Game</button>
+    </div>
+</body>
+</html>
